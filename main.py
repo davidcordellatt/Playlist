@@ -151,8 +151,8 @@ class Playlist():
         else:
             while len(self.waiting) > 1:
                 a = randint(0, len(self.waiting) -1)
-                list_random.append(self.waiting[a - 1])
-                self.waiting.pop(a - 1)
+                list_random.append(self.waiting[a])
+                self.waiting.pop(a)
                 
                 if len(self.waiting) == 1:
                     list_random.append(self.waiting[0])
